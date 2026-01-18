@@ -1,0 +1,38 @@
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	all: unset;
+	outline: 0;
+}
+
+%section_full {
+	background-color: $bg_color_section;
+	color: $text_color_section;
+}
+
+%section_bg {
+	background-color: $bg_color;
+	color: $bg_color_section;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+p {
+	all: unset;
+}
