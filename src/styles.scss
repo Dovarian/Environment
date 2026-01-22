@@ -103,4 +103,38 @@ main {
 			}
 		}
 	}
+
+	.why_and_for {
+		margin-top: 4rem;
+		padding: 2rem 3rem;
+		display: grid;
+		grid-template-columns: repeat(2, 50rem);
+		justify-content: center;
+		gap: 2rem;
+
+		span {
+			font-size: 1.5rem;
+		}
+		h2 {
+			border-bottom: 0.12rem solid $text_color_section;
+			padding: 0 0 0.5rem 0;
+		}
+		article {
+			background-color: $bg_color_section;
+			border-radius: 1rem;
+			box-shadow: $box-shadow;
+			color: $text_color_section;
+			padding: 10rem 2rem 3rem 2rem;
+		}
+		.why {
+			background: $bg_color_section url(/src/images/pollution.png) no-repeat
+				50% -10rem;
+			background-size: 100%;
+		}
+		.for {
+			background: $bg_color_section url(/src/images/nature.png) no-repeat
+				50% -5.6rem;
+			background-size: 100%;
+		}
+	}
 }
