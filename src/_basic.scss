@@ -18,6 +18,12 @@ a {
 	outline: 0;
 }
 
+button {
+	all: unset;
+	cursor: pointer;
+	user-select: none;
+}
+
 %section_full {
 	background-color: $bg_color_section;
 	color: $text_color_section;
