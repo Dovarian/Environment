@@ -13,16 +13,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	nav {
-		display: flex;
-		gap: 3rem;
-
-		a {
-			cursor: pointer;
-			padding: 0.5rem;
-		}
-	}
 }
 
 main {
@@ -138,25 +128,66 @@ main {
 		}
 	}
 
-	.play {
-		margin-top: 1rem;
-		padding: 2rem 9rem;
+	.heroes {
+		margin-top: 3rem;
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 8rem auto auto;
+		padding: 0 7rem;
 
-		button {
+		.hero {
 			background-color: $bg_color_section;
-			color: $text_color_section;
-			width: calc(100% - 2rem);
-			text-align: center;
-			padding: 2rem 1rem;
-			border-radius: 0.75rem;
+			border-radius: 0.5rem;
 			box-shadow: $box-shadow;
-			font-size: 1.75rem;
-			margin: 0 auto;
-			transition: 0.15s;
+			color: $text_color_section;
+			padding: 15rem 2rem 1.5rem 0rem;
+
+			h2 {
+				background-color: $bg_color_section;
+				padding: 0.5rem;
+				width: 50%;
+				margin-bottom: 0.5rem;
+			}
+			span {
+				display: block;
+				margin-left: 2rem;
+			}
 		}
-		button:hover {
-			background-color: $bg_color_section_hover;
-			font-weight: 500;
+		.hero-1 {
+			background: $bg_color_section url(/src/images/greta.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		.hero-2 {
+			background: $bg_color_section url(/src/images/david.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		.hero-3 {
+			background: $bg_color_section url(/src/images/vangari.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		.hero-4 {
+			background: $bg_color_section url(/src/images/albert.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		.hero-5 {
+			background: $bg_color_section url(/src/images/haide.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		.hero-6 {
+			background: $bg_color_section url(/src/images/boyan.jpg) no-repeat 50%
+				0rem;
+			background-size: 100%;
+		}
+		h1 {
+			grid-column: 1 / 4;
+			text-align: center;
+			color: $bg_color_section;
 		}
 	}
 
